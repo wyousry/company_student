@@ -16,7 +16,7 @@ class StudentButtons extends StatelessWidget {
             "Edit",
             const Color.fromARGB(255, 15, 171, 125),
             () {
-              // Action for Edit button
+              
             },
           ),
           _buildButton(context, "Delete", Colors.red, () {

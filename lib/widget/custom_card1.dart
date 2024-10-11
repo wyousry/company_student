@@ -29,24 +29,24 @@ class _CustomCard1State extends State<CustomCard1> {
             ),
             const SizedBox(height: 8),
             Container(
-              // حاوية تحتوي على DropdownButtonFormField
+            
               decoration: BoxDecoration(
-                color: Colors.white, // الخلفية البيضاء
-                borderRadius: BorderRadius.circular(10), // دوران الحواف
+                color: Colors.white, 
+                borderRadius: BorderRadius.circular(10), 
                 boxShadow: [
                   BoxShadow(
                     color:
-                        Colors.black.withOpacity(0.1), // لون الظل مع الشفافية
-                    spreadRadius: 1, // نطاق انتشار الظل
-                    blurRadius: 5, // درجة التمويه للظل
-                    offset: Offset(0, 3), // اتجاه الظل
+                        Colors.black.withOpacity(0.1), 
+                    spreadRadius: 1, 
+                    blurRadius: 5,
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
               child: DropdownButtonFormField<String>(
-                decoration: InputDecoration(
-                  border: InputBorder.none, // إزالة الحدود الافتراضية
-                  contentPadding: const EdgeInsets.symmetric(horizontal: 10),
+                decoration: const InputDecoration(
+                  border: InputBorder.none, 
+                  contentPadding: EdgeInsets.symmetric(horizontal: 10),
                 ),
                 value: selectedSubject,
                 items: const [
